@@ -1,0 +1,108 @@
+<section class="heroHeader">
+        <div class="hero">
+            <div class="registred">
+                <p>Iconic Design <strong> Recognised </strong></p>
+            </div>
+
+            <div class="heroITens">
+                <div class="titleHero">
+                    <h1>There's beauty in simplicity</h1>
+                </div>
+    
+                <div style="height: 72px;"></div>
+    
+                <div class="descHero">
+                    <p>Characteristic German design, quality and engineering prowess bolster Braun's standing against cheaply produced competing products.</p>
+                </div>
+    
+                <div style="height: 60px;"></div>
+    
+                <a class="btn-cta-primary">BUY NOW</a>
+
+                <div class="slideHero">
+                    <img class="imgHero" src="./camera.png">
+                    <div id="tagImg"> ABS </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    .heroHeader {
+    height: 500px;
+    width: 100%;
+    position: absolute;
+ }
+ 
+ .registred {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    float: left;
+    width: 60px;
+    height: 500px;
+ }
+
+ .hero {
+    position: relative;
+    height: 500px;
+    margin-right: 160px;
+    margin-left: 160px;
+    color: var(--main-grey-color);
+    background-color: var(--main-primary-color);
+ }
+
+
+ .titleHero {
+    width: 50%;
+    margin-top: 52px;
+    position: absolute;
+ }
+
+ .heroITens{
+    margin-left: 168px;
+ }
+
+ .descHero{
+    width: 40%;
+    border-left: 2px solid var(--main-grey-color);
+    padding-left: 24px;
+    position: absolute;
+    margin-top: 160px;
+}
+
+ .btn-cta-primary{
+    position: absolute;
+    width: 88px; 
+    border-bottom: 2px solid var(--main-red-color);
+    color: var(--main-light-color);
+    padding-bottom: 8px;
+    font-weight: 700;  
+    margin-top: 240px;
+ }
+
+ .btn-cta-primary:hover {
+    border-bottom: 2px solid var(--main-light-color);
+    color: var(--main-light-color);
+    padding-bottom: 8px;
+ }
+
+ .slideHero{
+    width: 50%;
+    float: right;
+    position: relative;
+ }
+
+.imgHero{
+    width: 350px;
+} 
+
+#tagImg{
+    color: var(--main-grey-color);
+    font-family: var(--main-font);
+    font-weight: 100;
+    font-size: 240px;
+    float: right;
+    margin-right: -160px;
+    margin-top: -400px;
+}
