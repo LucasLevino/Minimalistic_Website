@@ -32,11 +32,17 @@ h1 {
   font-weight: 300;
 }
 
+h2 {
+    font-family: var(--main-font);
+    font-size: 40px;
+    font-weight: 500;
+}
+
 h4 {
   font-family: var(--main-font);
-  font-size: 32px;
-  font-weight: 700;
- }
+  font-size: 24px;
+  font-weight: 500;
+}
 
 p {
   font-family: var(--main-font);
@@ -79,6 +85,7 @@ input{
  */
  .navHeader{
     justify-content: space-between;
+
 }
 
  .navHeader .navMenu{
@@ -122,9 +129,7 @@ input{
 .item-1{
     width: 10%; 
     height: 500px;
-	text-align: center;
-
-    background-color: darkcyan;
+    position: relative;
 }
 
 .item-2{
@@ -183,6 +188,50 @@ input{
     color: var(--main-grey-color);
     float: right;
     margin-right: -124px;
-    font-size: calc(200px + (8/1200) * 100 * 1vw);
+    font-size: calc(160px + (8/1200) * 100 * 1vw);
     font-weight: 100;
  }
+
+ #registro {
+    position: absolute;
+    bottom: 64px;
+    transform: rotate(270deg);
+    color: var(--main-grey-color);
+ }
+
+
+.productsContainer{
+    background-color: var(--main-light-color);
+    width: 100%;
+}
+
+ .productsItem{
+    width: 80%;
+    margin: 0 auto;
+ }
+
+ .productsBox {
+    margin-top: 32px;
+
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .itemSpec{
+     width: 30%;
+     height: 150px;
+     color: var(--main-primary-color);
+ }
+
+ .itemSpecTitle{
+   margin-bottom: 24px;
+}
+
+.lensesContainer{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 32px;
+    height: 500px;
+}
+
