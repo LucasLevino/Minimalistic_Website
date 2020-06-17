@@ -225,7 +225,7 @@ input{
     position: relative;
 }
 #item-2 {
-    width: 40%; 
+    width: 50%; 
     margin-top: 40px;
 }
 #item-3 {
@@ -242,7 +242,6 @@ input{
     white-space: nowrap;
     transform: rotate(-90deg);
     position: relative;
-    bottom: -350px;
  }
 
  /* Item 2 */
@@ -274,35 +273,98 @@ input{
  }
 
 
- /* Item 3 */
- #titleCamera {
-    font-family: var(--main-font);
-    color: var(--main-grey-color);
-    float: right;
-    margin-right: -124px;
-    font-size: calc(160px + (8/1200) * 100 * 1vw);
-    font-weight: 100;
- }
- #camera {
-    width: 25%;
-    margin-top: 120px;
-    position: absolute;
- }
-
-
- 
-
-
 
 #specsTitle{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 2em;
     display: inline-block;
     bottom: 0;
     padding: 0;
     transform: rotate(-90deg);
     position: relative;
     bottom: -100px;
-
+    left: -100px;
 }
 
 
 
+@media screen and (max-width: 1024px) {
+    #camera {
+        width: 30%;
+        margin-top: 100px;
+        position: absolute;
+     }
+
+    .descHero {
+        width: 90%;
+        margin-top: 56px;
+        margin-left: 8px;
+        border-left: 2px solid var(--main-grey-color);
+        padding-left: 24px;
+    }
+    
+    #titleCamera {
+        font-family: var(--main-font);
+        color: var(--main-grey-color);
+        float: right;
+        margin-right: -100px;
+        font-size: 8em;
+        font-weight: 100;
+     }
+
+     .heroBox {
+        height: 450px;
+    } 
+
+    #registro {
+        bottom: -300px;
+     }
+
+    .pag-imgs{
+       max-height: 100%;
+       max-width: 100%; 
+    }
+
+    #specsTitle{
+        font-size: 2em;
+        transform: rotate(-90deg);
+        bottom: -150px;
+        left: -100px;
+    }
+ }
+
+
+@media screen and (min-width: 1025px) and (max-width: 1444px) {
+    #camera {
+        width: 30%;
+        margin-top: 120px;
+        position: absolute;
+     }
+      /* Item 3 */
+    #titleCamera {
+        font-family: var(--main-font);
+        color: var(--main-grey-color);
+        float: right;
+        margin-right: -124px;
+        font-size: 10em;
+        font-weight: 100;
+    }
+    #registro {
+        bottom: -350px;
+     }
+
+    .pag-imgs{
+       max-height: 80%;
+       max-width: 100%; 
+    }
+
+    #specsTitle{
+        font-size: 3em;
+        transform: rotate(-90deg);
+        bottom: -100px;
+        left: -100px;
+    }
+ 
+     
+ }
