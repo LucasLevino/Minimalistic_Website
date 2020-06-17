@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
     <section class="navHeader container">
-        <img src="./logo.png" style="height: 90px;margin-bottom: 8px;margin-top: 16px;">
+        <img src="./assets/logo.png" style="height: 90px;margin-bottom: 8px;margin-top: 16px;">
 
         <nav class="navMenu">
-            <a href="#Specs">Specs</a>
-            <a href="">Lenses</a> 
-            <a href="">Offers</a> 
+            <a class="option" href="#Specs">Specs</a>
+            <a class="option" href="">Lenses</a> 
+            <a class="option" href="">Offers</a> 
             <input type="text" placeholder="How can we help?">
-            <img src="./bag.svg" style="width: 32px;margin-left: 32px;">
+            <a><img src="./assets/bag.svg"></a>
         </nav>
     </section>
 
@@ -47,59 +48,58 @@
             <div id="item-3"> 
                 <div id="Polaroid">
                     <span id="titleCamera">I‑TYPE</span>
-                    <img id="camera" src="./camera.png">
+                    <img id="camera" src="./assets/camera.png">
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section id="Specs" class="container"> 
-        <div id="lightContainer" class="coluna-10">
-
+    <section id="lightContainer" class="container"> 
+        <div class="coluna-10">
             <div class="espacamento-vertical-2"></div>
 
             <div class="container">
-                <div class="space-between">
+              <div class="space-between">
 
-                      <div class="coluna-3 primary-text">
-                          <h4 class="title-secondary">
-                            Accurate Flash
-                          </h4>
+                <div class="coluna-3 primary-text">
+                  <h4 class="title-secondary">
+                    Accurate Flash
+                  </h4>
   
-                          <P class="text-left">
-                            A more human-friendly flash to make everyone look like they should.
-                          </P> 
-                      </div>
-
-                      <div class="coluna-3 primary-text">
-                          <h4 class="title-secondary">
-                            Rechargeable battery
-                          </h4>
-  
-                          <P class="text-left">
-                            Be ready for every moment with a built-in rechargeable battery and USB charging cable.
-                          </P> 
-                      </div>
-          
-        
-                      <div class="coluna-3 primary-text">
-                          <h4 class="title-secondary">
-                            i-Type film
-                          </h4>
-  
-                          <P class="text-left">
-                            Uses our battery-free i-Type film that’s easier on the wallet.
-                          </P> 
-                      </div>
-
+                  <P class="text-left">
+                    A more human-friendly flash to make everyone look like they should.
+                  </P> 
                 </div>
+
+                <div class="coluna-3 primary-text">
+                  <h4 class="title-secondary">
+                    Rechargeable battery
+                  </h4>
+  
+                  <P class="text-left">
+                    Be ready for every moment with a built-in rechargeable battery and USB charging cable.
+                  </P> 
+                </div>
+        
+                <div class="coluna-3 primary-text">
+                  <h4 class="title-secondary">
+                    i-Type film
+                  </h4>
+  
+                  <P class="text-left">
+                    Uses our battery-free i-Type film that’s easier on the wallet.
+                  </P> 
+                </div>
+
+              </div>
             </div>
 
             <div class="espacamento-vertical-3"></div>
 
             <!-- Container de Informacoes da Lente -->
             <div id="Lenses" class="space-between">
+                <div class="coluna-1"></div>
 
                 <div class="coluna-3">
                     <div class="coluna-7 text-left primary-text" style="margin-left: 32px;">
@@ -113,41 +113,76 @@
                     </div>
                 </div>
 
-                <div class="coluna-7">
-                    <img src="./lenses.jpg" style="max-height: 100%; max-width: 100%; float: right;">
+                <div class="coluna-6">
+                    <img src="./assets/lenses.jpg" style="max-height: 80%; max-width: 100%; float: right;">
                 </div>
             </div>
 
+            <!-- Container de Informacoes Funcao double -->
+            <div class="space-between">
+              <div class="coluna-6">
+                <img src="./assets//double.jpg" style="max-height: 80%; max-width: 100%; float: left;">
+              </div>
+
+              <div class="coluna-3">
+                <div class="coluna-7 text-left primary-text" style="margin-left: 32px;">
+                    <h2 class="title-secondary">
+                      Built‑in double exposure
+                    </h2>
+
+                    <p>
+                      Get two frames in the one Polaroid photograph. Dreamy, artistic, and ready to add some drama to your photography.
+                    </p>
+                </div>
+              </div>
+
+              <div class="coluna-1"></div>
+            </div>
+
+            <!-- Container de Informacoes Funcao double -->
+            <div class="space-between primary-text">
+              <div class="coluna-1">
+                <h2 class="title-secondary" id="specsTitle">
+                  Technical Specifications
+                </h2>
+              </div>
+
+              <div class="coluna-3">
+                <div class="text-left primary-text">
+                  <ul>
+                    <li>Dimensions: 3.7 × 4.4 × 5.9 in (94 x 112.2 x 150.2 mm)</li>
+                    <li>Weight: 0.95 lbs (434 grams) (without film pack)</li><br/>
+                    <li>Battery: High performance lithium-ion battery (750mAh), rechargeable via USB</li>
+                    <li>Outer shell: Polycarbonate + ABS plastics</li><br/>
+                    <li>Lenses: Optical grade Polycarbonate and Acrylic lenses, coated</li>
+                    <li>Shutter system: Custom design, using precision step motor for shutter</li><br/>
+                    <li>Autofocus system via 2 fixed focus zones 0.55m-1.3m, 0.6m-infinity</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="coluna-3">
+                <div class="text-left primary-text">
+                    <ul>
+                      <li>length</li>
+                      <li>Close-up (lens 1) 94.96 mm </li>
+                      <li>Distance (lens 2) 102.35 mm </li><br/>
+                      <li>Field of view</li>
+                      <li>41 degrees vertical, 40 degrees horizontal</li><br/>
+                      <li>Flash system</li>
+                      <li>Vacuum discharge tube storage</li><br/>
+                      <li>Neck Strap and USB charging cable included</li>
+                    </ul>
+                </div>
+              </div>
+              
+              <div class="coluna-1"></div>
+            </div>
+
+            <div class="espacamento-vertical-3"></div>
         </div>
-
-
     </section>
-
-    <div class="espacamento-vertical-2"></div>
-
-    <footer class="container">
-        <div class="coluna-10" style="background-color: rebeccapurple;height: 200px;">
-          <div class="coluna-3">
-            <div>
-              
-            </div>
-          </div>
-
-          <div class="coluna-3">
-            <div>
-              
-            </div>
-          </div>
-
-          <div class="coluna-3">
-            <div>
-                
-            </div>
-          </div>
-        
-        </div>
-    </footer>
-    
+    <div class="espacamento-vertical-3"></div>
 
 </body>
 </html>

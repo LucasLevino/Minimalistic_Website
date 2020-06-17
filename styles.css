@@ -70,6 +70,13 @@ p {
   line-height: 32px;
 }
 
+ul{
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 24px;
+    list-style-type: none
+}
+
 a {
   font-family: var(--main-font);
   font-size: 14px;
@@ -117,12 +124,20 @@ input{
     .coluna-10 para quando quiser usar 100% do espaco
 
 */
+.coluna-1 {
+    width: 10%;
+}
+
 .coluna-3 {
     width: 30%;
 }
 
 .coluna-4{
     width: 40%;
+}
+
+.coluna-6{
+    width: 60%;
 }
 
 .coluna-7{
@@ -178,7 +193,7 @@ input{
    margin-left: 32px;
  }   
 
- .navMenu .active a, a:hover {
+ .navMenu .active a, .option:hover {
     border-bottom: 2px solid var(--main-light-color);
     color: var(--main-light-color);
     padding-bottom: 8px;
@@ -279,14 +294,15 @@ input{
 
 
 
+#specsTitle{
+    display: inline-block;
+    bottom: 0;
+    padding: 0;
+    transform: rotate(-90deg);
+    position: relative;
+    bottom: -100px;
 
-
-
-
-
-
-
-footer div{
-    display: flex;
-    justify-content: space-between;
 }
+
+
+
