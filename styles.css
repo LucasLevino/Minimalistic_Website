@@ -7,15 +7,22 @@
 	border: 0;
 }
 
+
+body {
+    background-color: var(--main-primary-color);
+}
+  
+
 /*
-    Palete
+    Paleta
     >> #444343 Dark Color
     >> #F5F5F5 Light color
     >> #D2CFCE Grey Color
     >> #C75555 Red Color
 
-    Font
+    Fonte
     >> Roboto - Thin w100, Light w300, Regular w400, Medium w500, Bold w700
+
 */
 :root{
     --main-primary-color: #444343;
@@ -25,6 +32,18 @@
 
     --main-font: 'Roboto', sans-serif;
 }
+
+.grey-text{
+    color: var(--main-grey-color);
+}
+.primary-text{
+    color: var(--main-primary-color);
+}
+
+
+/*
+   Regras de Texto 
+*/
 
 h1 {
   font-family: var(--main-font);
@@ -57,10 +76,6 @@ a {
   font-weight: 400;  
 }
 
-body {
-  background-color: var(--main-primary-color);
-}
-
 input{
 	margin: 0 auto;
     padding: 8px;
@@ -69,23 +84,82 @@ input{
 	border-radius: 50px; 
 }
 
+.title-secondary{
+    margin-bottom: 24px;
+}
+.text-left{
+    text-align: left;
+}
+
+
+
+/*
+  >> Regras de Espacamento Vertical
+        `Utilizei a Regra do 8 para personalizar espacamentos
+*/
+
+.espacamento-vertical-1{
+    height: 24px;
+}
+.espacamento-vertical-2{
+    height: 32px;
+}
+.espacamento-vertical-3{
+    height: 64px;
+}
+
+
+/*
+  >> Regras de Coluna 
+
+    .coluna-3 para quando quiser divir em 3 ou quando quiser usar apenas 30% do espaco
+    .coluna-7 para quando quiser usar 70% do espaco
+    .coluna-10 para quando quiser usar 100% do espaco
+
+*/
+.coluna-3 {
+    width: 30%;
+}
+
+.coluna-4{
+    width: 40%;
+}
+
+.coluna-7{
+    width: 70%;
+}
+
+.coluna-10{
+    width: 100%;
+}
+
+
 /*
     Custom Class
 */
 
 /* Primary Class */
- .container {
+.container {
      display: flex;
      width: 80%;
      margin: 0 auto;
- }   
+}   
+
+#lightContainer{
+    background-color: var(--main-light-color);
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between
+}
+  
 
  /* 
     Header Class 
  */
  .navHeader{
     justify-content: space-between;
-
 }
 
  .navHeader .navMenu{
@@ -113,6 +187,14 @@ input{
 
 /*   
     hero Section
+
+    1 Ajustes do header
+    2 Herobox
+    2.1 Ajustes de Itens do Herobox
+    2.2 Configuracao do item 1
+    2.3 Configuracoes do item 2
+    2.4 Configuracoes do item 3
+
 */
 
 .heroHeader {
@@ -120,47 +202,48 @@ input{
 }
 
 .heroBox {
-    width: 100%; 
     height: 500px;
-    display: flex;
-    justify-content: space-between;
 }
 
-.item-1{
+#item-1{
     width: 10%; 
-    height: 500px;
     position: relative;
 }
-
-.item-2{
+#item-2 {
     width: 40%; 
     margin-top: 40px;
 }
-
-.item-3{
+#item-3 {
     width: 40%; 
-    height: 500px;
 }
 
-.titleHero {
-    color: var(--main-grey-color);
-}
+ /* Item 1 */
+#registro {
+    font-family: var(--main-font);
+    display: inline-block;
+    bottom: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    position: relative;
+    bottom: -350px;
+ }
 
+ /* Item 2 */
 .descHero {
     width: 80%;
     margin-top: 72px;
     margin-left: 8px;
     border-left: 2px solid var(--main-grey-color);
     padding-left: 32px;
-
-    color: var(--main-grey-color);
 }
 
-.btnHero {
+
+#btnHero {
     margin-top: 64px;
     margin-left: 72px;
 }
-
 .btn-cta-primary{
     position: absolute;
     width: 88px; 
@@ -169,7 +252,6 @@ input{
     padding-bottom: 8px;
     font-weight: 700;  
  }
-
  .btn-cta-primary:hover {
     border-bottom: 2px solid var(--main-light-color);
     color: var(--main-light-color);
@@ -177,12 +259,7 @@ input{
  }
 
 
- #camera {
-    width: 25%;
-    margin-top: 120px;
-    position: absolute;
- }
-
+ /* Item 3 */
  #titleCamera {
     font-family: var(--main-font);
     color: var(--main-grey-color);
@@ -191,47 +268,25 @@ input{
     font-size: calc(160px + (8/1200) * 100 * 1vw);
     font-weight: 100;
  }
-
- #registro {
+ #camera {
+    width: 25%;
+    margin-top: 120px;
     position: absolute;
-    bottom: 64px;
-    transform: rotate(270deg);
-    color: var(--main-grey-color);
  }
 
 
-.productsContainer{
-    background-color: var(--main-light-color);
-    width: 100%;
-}
+ 
 
- .productsItem{
-    width: 80%;
-    margin: 0 auto;
- }
 
- .productsBox {
-    margin-top: 32px;
 
+
+
+
+
+
+
+
+footer div{
     display: flex;
     justify-content: space-between;
- }
-
- .itemSpec{
-     width: 30%;
-     height: 150px;
-     color: var(--main-primary-color);
- }
-
- .itemSpecTitle{
-   margin-bottom: 24px;
 }
-
-.lensesContainer{
-    display: flex;
-    justify-content: space-between;
-
-    margin-top: 32px;
-    height: 500px;
-}
-
