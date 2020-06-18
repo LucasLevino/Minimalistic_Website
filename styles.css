@@ -18,10 +18,8 @@ body {
     >> #F5F5F5 Light color
     >> #D2CFCE Grey Color
     >> #C75555 Red Color
-
     Fonte
     >> Roboto - Thin w100, Light w300, Regular w400, Medium w500, Bold w700
-
 */
 :root{
     --main-primary-color: #444343;
@@ -117,11 +115,9 @@ input{
 
 /*
   >> Regras de Coluna 
-
     .coluna-3 para quando quiser divir em 3 ou quando quiser usar apenas 30% do espaco
     .coluna-7 para quando quiser usar 70% do espaco
     .coluna-10 para quando quiser usar 100% do espaco
-
 */
 .coluna-1 {
     width: 10%;
@@ -201,14 +197,12 @@ input{
 
 /*   
     hero Section
-
     1 Ajustes do header
     2 Herobox
     2.1 Ajustes de Itens do Herobox
     2.2 Configuracao do item 1
     2.3 Configuracoes do item 2
     2.4 Configuracoes do item 3
-
 */
 
 .heroHeader {
@@ -371,11 +365,8 @@ input{
     #specsTitle{
         font-size: 3em;
         transform: rotate(-90deg);
-        bottom: -100px;
+        bottom: -16px;
         left: -100px;
     }
-
      
  }
-
-
