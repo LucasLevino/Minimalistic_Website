@@ -7,7 +7,6 @@
 	border: 0;
 }
 
-
 body {
     background-color: var(--main-primary-color);
 }
@@ -287,7 +286,15 @@ input{
     left: -100px;
 }
 
+#logo{
+    height: 90px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
 
+.titleImg{
+    display: none;
+ }
 
 @media screen and (max-width: 1024px) {
     #camera {
@@ -368,3 +375,5 @@ input{
  
      
  }
+
+

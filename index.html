@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style-mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 
     <section class="navHeader container">
-        <img src="./assets/logo.png" style="height: 90px;margin-bottom: 8px;margin-top: 16px;">
+        <img src="./assets/logo.png" id="logo">
 
         <nav class="navMenu">
             <a class="option" href="#Specs">Specs</a>
@@ -18,9 +20,22 @@
             <input type="text" placeholder="How can we help?">
             <a><img src="./assets/bag.svg"></a>
         </nav>
+
+
+        <div class="menumobile">
+          <button class="btnmobile">Menu</button>
+
+          <div class="menulist">
+            <a href="#">Specs</a>
+            <a href="#">Lenses</a>
+            <a href="#">Offers</a>
+          </div>
+        </div>
+
     </section>
 
     <section class="heroBox container">
+
         <div class="coluna-10 space-between">
             <div id="item-1">
                 <div class="grey-text"> 
@@ -31,8 +46,8 @@
             <div id="item-2">
 
                 <div class="grey-text">
-                    <h1> Polaroid is back </h1>
-                    <h4> Polaroid Now i‑Type </h4>
+                    <h1 id="TitleHero"> Polaroid is back </h1>
+                    <h4 id="SubTitleHero"> Polaroid Now i‑Type </h4>
                 </div>
 
                 <div class="descHero grey-text">
@@ -60,9 +75,9 @@
             <div class="espacamento-vertical-2"></div>
 
             <div class="container">
-              <div class="space-between">
+              <div class="space-between Funcao">
 
-                <div class="coluna-3 primary-text">
+                <div class="coluna-3 Item-funcao primary-text">
                   <h4 class="title-secondary">
                     Accurate Flash
                   </h4>
@@ -72,7 +87,7 @@
                   </P> 
                 </div>
 
-                <div class="coluna-3 primary-text">
+                <div class="coluna-3 Item-funcao primary-text">
                   <h4 class="title-secondary">
                     Rechargeable battery
                   </h4>
@@ -82,7 +97,7 @@
                   </P> 
                 </div>
         
-                <div class="coluna-3 primary-text">
+                <div class="coluna-3 Item-funcao primary-text">
                   <h4 class="title-secondary">
                     i-Type film
                   </h4>
@@ -100,19 +115,20 @@
             <!-- Container de Informacoes da Lente -->
             <div id="Lenses" class="space-between">
 
-                <div class="coluna-4">
-                    <div class="coluna-7 text-left primary-text" style="margin-left: 64px;">
+                <div class="coluna-4 item-espec">
+                    <div class="coluna-7  text-left primary-text" style="margin-left: 64px;">
                         <h2 class="title-secondary">
                           Autofocus 2‑lens system
                         </h2>
 
-                        <p>
+                        <p class="desc-espec">
                           In other words: sharper photos, easily. The Polaroid Now decides which lens is suitable, so you get beautiful portraits in more places, more often — even without the flash.
                         </p>
                     </div>
                 </div>
 
-                <div class="coluna-6">
+                <div class="coluna-6 imagem-spec">
+                    <div class="titleImg"><h2>Autofocus 2‑lens system</h2></div>
                     <img src="./assets/lenses.jpg" class="pag-imgs" style="float: right;">
                 </div>
             </div>
@@ -121,11 +137,13 @@
 
             <!-- Container de Informacoes Funcao double -->
             <div class="space-between">
-              <div class="coluna-6">
+
+              <div class="coluna-6 imagem-spec">
+                <div class="titleImg"><h2>Built‑in double exposure</h2></div>
                 <img src="./assets//double.jpg" class="pag-imgs" style="float: left;">
               </div>
 
-              <div class="coluna-4">
+              <div class="coluna-4 item-espec">
                 <div class="coluna-7 text-left primary-text" style="margin-left: 32px;">
                     <h2 class="title-secondary">
                       Built‑in double exposure
@@ -141,14 +159,22 @@
             <div class="espacamento-vertical-3"></div>
 
             <!-- Container de Informacoes Tecnicas -->
-            <div class="container space-between primary-text">
-              <div class="coluna-1">
+            <div class="container spec-container space-between primary-text">
+              
+              <div class="coluna-1 title-spec space-between">
                 <span class="title-secondary" id="specsTitle">
                   Technical Specifications
                 </span>
-              </div>
 
-              <div class="coluna-4">
+                <div id="btnSeeMore"  class="menumobile">
+                  <button id="specbtn" class="btnSpec"> ver mais </button>
+                  <button id="btnMinus" class="btnSpec"> ver menos </button>
+                </div>
+              </div>
+              
+
+
+              <div class="coluna-4 spec-item">
                 <div class="text-left">
                   <ul>
                     <li>Dimensions: 3.7 × 4.4 × 5.9 in (94 x 112.2 x 150.2 mm)</li>
@@ -162,7 +188,7 @@
                 </div>
               </div>
 
-              <div class="coluna-4">
+              <div class="coluna-4 spec-item">
                 <div class="text-left">
                     <ul>
                       <li>length</li>
@@ -176,12 +202,28 @@
                     </ul>
                 </div>
               </div>
+              
             </div>
 
             <div class="espacamento-vertical-3"></div>
         </div>
     </section>
+
     <div class="espacamento-vertical-3"></div>
+
+    <script>
+      $( "#specbtn" ).click(function() {
+        $( this ).css({ display: "none" });
+        $( "#btnMinus" ).css({ display: "block" });
+        $( ".spec-item" ).css({ display: "block" });
+      });
+
+      $( "#btnMinus" ).click(function() {
+        $( this ).css({ display: "none" });
+        $( "#specbtn" ).css({ display: "block" });
+        $( ".spec-item" ).slideUp();
+      });
+    </script>
 
 </body>
 </html>
