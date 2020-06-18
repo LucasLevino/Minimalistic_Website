@@ -271,7 +271,7 @@ input{
     padding-bottom: 8px;
  }
 
-
+ .menumobile{display: none;}
 
 #specsTitle{
     font-family: var(--main-font);
@@ -295,6 +295,10 @@ input{
 .titleImg{
     display: none;
  }
+
+#text-lenses {margin-left: 64px;}
+#text-double {margin-left: 32px;}
+
 
 @media screen and (max-width: 1024px) {
     #camera {
@@ -372,7 +376,7 @@ input{
         bottom: -100px;
         left: -100px;
     }
- 
+
      
  }
 
