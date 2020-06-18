@@ -183,6 +183,8 @@
 
 }
    
+
+/* Alteracoes Master */
 @media screen and (min-width: 430px) and (max-width: 768px) {
    
     /* Header */
@@ -221,7 +223,6 @@
    
 
 }
-
 
 /* Alteracoes por id */
 @media screen and (min-width: 430px) and (max-width: 768px) {
@@ -282,4 +283,21 @@
 
 
 
+}
+
+
+
+/* Alteracoes por id */
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+   /* Container de Informacoes Tecnicas */
+   #tec-spec-title{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    }
+
+    #specsTitle{
+        bottom: -24px;
+        left: -200px;
+    }
 }
